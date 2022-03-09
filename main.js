@@ -6,7 +6,7 @@ $(document).ready(function (){
 
 /** THIS FIRST FETCH GETS THE LIST OF POKEMONS */
 
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=200", {
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=252", {
         "method": "GET",
         "cache": "no-cache"
     })
@@ -66,7 +66,7 @@ $(document).ready(function (){
                                         })
 
                                         /** PUTTING INFORMATION INTO THE CARD VIA THE DIV IN THE INDEX.HTML */
-                                        myPokemons += `<div class="card-deck col-sm-6 col-md-4 col-lg-4"><div class="card align-items-center mb-4"><img class="card-img-top w-50" src=${resultsTwo.sprites.front_default}><div class="card-body text-center"><div><h1 class="card-title">${resultsTwo.name}</h1><p>Base Experience ${resultsTwo.base_experience}</p><p class="card-text">Weight: ${resultsTwo.weight}</p><p>Height: ${resultsTwo.height}</p><p id="types">Type(s): ${itsType}</p><p>Abilities: ${itsAbilities}</p><p>Stats: ${itsStats}</p></div></div></div></div>`
+                                        myPokemons += `<div class="card-deck col-sm-6 col-md-4 col-lg-4 p-1"><div class="card align-items-center mb-4 mt-4 shadow"><img class="card-img-top w-50" src=${resultsTwo.sprites.front_default}><div class="card-body text-center"><div><h1 class="card-title">${resultsTwo.name}</h1><p>Base Experience ${resultsTwo.base_experience}</p><p class="card-text">Weight: ${resultsTwo.weight}</p><p>Height: ${resultsTwo.height}</p><p id="types">Type(s): ${itsType}</p><p>Abilities: ${itsAbilities}</p><p>Stats: ${itsStats}</p></div></div></div></div>`
                                         $("#pokemons").html(myPokemons);
 
                                     })

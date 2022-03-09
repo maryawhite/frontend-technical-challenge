@@ -1,3 +1,34 @@
-/** {*/
-/*    box-sizing: border-box;*/
-/*}*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*background-color: #f4e76e;*/
+    /*background-color: #427AA1;*/
+    background-color: #05668D;
+}
+
+.card {
+    /*background-color: #b3cdd1;*/
+    /*background-color: #B4A6AB;*/
+    background-color: #EBF2FA;
+    border-radius: 1em;
+}
+
+.fa-solid {
+    size: 4em;
+    padding: 1em;
+    color: white;
+    margin-left: 2em;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #F4E76E;
+
+}
+
+/*color palette 05668D, 427AA1, EBf2FA, F4E76E, F7FE72 */

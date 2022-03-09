@@ -1,0 +1,33 @@
+{
+  "name": "frontend-technical-challenge",
+  "version": "1.0.0",
+  "description": "using the Pokemon API",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryawhite/frontend-technical-challenge.git"
+  },
+  "keywords": [
+    "frontend",
+    "javascript",
+    "jquery",
+    "html",
+    "css"
+  ],
+  "author": "Mary White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maryawhite/frontend-technical-challenge/issues"
+  },
+  "homepage": "https://github.com/maryawhite/frontend-technical-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "16.6.1"
+  }
+}

@@ -28,7 +28,11 @@ a {
 
 a:hover {
     color: #F4E76E;
+}
 
+.card-img-top {
+    height: 180px;
+    width: 180px;
 }
 
 /*color palette 05668D, 427AA1, EBf2FA, F4E76E, F7FE72 */

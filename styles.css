@@ -3,14 +3,10 @@
 }
 
 body {
-    /*background-color: #f4e76e;*/
-    /*background-color: #427AA1;*/
     background-color: #05668D;
 }
 
 .card {
-    /*background-color: #b3cdd1;*/
-    /*background-color: #B4A6AB;*/
     background-color: #EBF2FA;
     border-radius: 1em;
 }
@@ -27,12 +23,29 @@ a {
 }
 
 a:hover {
-    color: #F4E76E;
+    color: #F2E86D;
 }
 
 .card-img-top {
     height: 180px;
     width: 180px;
+}
+
+.jumbotron {
+    background-color: #F2E86D;
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
+    border-style: solid;
+}
+.jumbotron h1 {
+    font-family: 'Kirang Haerang', cursive;
+}
+
+footer {
+    color: white;
+    background-color: #05648A;
 }
 
 /*color palette 05668D, 427AA1, EBf2FA, F4E76E, F7FE72 */

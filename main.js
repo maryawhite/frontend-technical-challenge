@@ -32,7 +32,13 @@ $(document).ready(function (){
                             //capture the user input and convert to lower case
                             let userSearch = $("#pokemon-search").val().toLowerCase();
 
+                            if(!name.includes(userSearch)){
+                                // $("#pokemons").addClass("nosearchresults");
+                                $("#pokemons").html("No results, search again").addClass("nosearchresults");
+                            }
+
                             if(name.includes(userSearch)) {
+
                                 /** THIS SECOND FETCH INSIDE OF THE FOR LOOP GETS THE INFO OUT OF THE URL THAT WAS PROVIDED IN THE FIRST FETCH */
                                 fetch(url, {
                                     "method": "GET",
@@ -80,11 +86,11 @@ $(document).ready(function (){
 
                                                 /** PUTTING INFORMATION INTO THE CARD VIA THE DIV IN THE INDEX.HTML */
                                                 mySearchedPokemons += `<div class="card-deck col-md-6 col-xl-4 p-2"><div class="card align-items-center mb-4 mt-4 shadow"><img class="card-img-top" src=${resultsSearch.sprites.front_default}><div class="card-body text-center"><div><h1 id="pokeName" class="card-title">${capitalizeFirstLetter(resultsSearch.name)}</h1><p>Base Experience ${resultsSearch.base_experience}</p><p class="card-text">Weight: ${resultsSearch.weight}</p><p>Height: ${resultsSearch.height}</p><p id="types">Type(s): ${itsType}</p><p>Abilities: ${itsAbilities}</p><p>Stats: ${itsStats}</p></div></div></div></div>`
-                                                $("#pokemons").html(mySearchedPokemons);
+                                                $("#pokemons").html(mySearchedPokemons).removeClass("nosearchresults");
                                             })
                                     })
-                            }
-                        } //end search section
+                            }  //end of if
+                        }  //end search section
 
 
                         /** THIS SECOND FETCH INSIDE OF THE FOR LOOP GETS THE INFO OUT OF THE URL THAT WAS PROVIDED IN THE FIRST FETCH */
@@ -141,10 +147,14 @@ $(document).ready(function (){
 
                                     })
                             })
-                    }
+                    }   //end of for loop
                 })
                 .catch(err => console.error(err))
         });
+
+    $("#reset").click(function(){
+        location.reload();
+    });
 
     /** FUNCTION TO CAPITALIZE NAME, USE INSIDE OF $ */
     function capitalizeFirstLetter(word){

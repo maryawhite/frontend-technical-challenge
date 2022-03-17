@@ -43,6 +43,11 @@ a:hover {
     font-family: 'Kirang Haerang', cursive;
 }
 
+.nosearchresults {
+    font-size: 2em;
+    color: red;
+}
+
 footer {
     color: white;
     background-color: #05648A;

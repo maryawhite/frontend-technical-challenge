@@ -6,6 +6,13 @@ body {
     background-color: #05668D;
 }
 
+#loadingbar {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid;
+    margin: auto;
+}
+
 .card {
     background-color: #EBF2FA;
     border-radius: 1em;

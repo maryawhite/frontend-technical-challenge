@@ -2,6 +2,33 @@
 
 $(document).ready(function (){
 
+function moveProgressBar() {
+    var i = 0;
+    function move(){
+        if (i === 0) {
+            i = 1;
+            var elem = $(".progress-bar");
+            var width = 7;
+            var id = setInterval(frame, 100);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    i = 0;
+                    $(".progress").addClass("d-none");
+                    elem.addClass("d-none");
+                } else {
+                    width++;
+                    elem.width(width + "%");
+                }
+            }
+        }
+    }
+    move();
+}
+
+    $(".progress-bar").removeClass("d-none"); //Make it visible
+    moveProgressBar();                           //then during the function it will be set back to invisible
+
 /** THIS FIRST FETCH GETS THE LIST OF POKEMONS LIMITED TO 252 */
 
     fetch("https://pokeapi.co/api/v2/pokemon?limit=252", {

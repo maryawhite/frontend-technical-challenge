@@ -18,20 +18,22 @@
     <title>Homepage</title>
 </head>
 <body>
-<!--Jumbotron heading-->
 <p><a href="#bottom"><i class="fa-solid fa-angle-down"></i> down</a></p>
+<!--Jumbotron heading-->
 <div class="jumbotron text-center">
     <h1 class="display-3">252 Pokémon</h1>
     <p class="lead">characters from the Pokémon API</p>
 </div>
 <!--Loading Bar-->
-<div id="loadingbar" class="invisible">Loading...</div>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">Loading</div>
+</div>
 <!--Search Bar-->
 <form class="form-inline justify-content-center">
     <label for="pokemon-search" class="text-white mr-2">Search</label>
     <input id="pokemon-search" type="search" class="form-control mb-2 mr-2">
     <input id="submit" type="submit" class="btn btn-light mb-2 mr-2">
-    <button id="reset" type="button" class="btn btn-outline-dark mb-2 ml-3">Reset</button>
+    <button id="reset" type="button" class="btn btn-outline-light mb-2 ml-3">Reset</button>
 
 </form>
 
@@ -39,7 +41,7 @@
 <div id="pokemons" class="d-flex flex-wrap justify-content-around"></div>
 
 <div id="bottom"><a href="#"><i class="fa-solid fa-angle-up"></i> up</a></div>
-<footer class="text-center small">Mary White <a href="https://www.linkedin.com/in/marychindwhite/"><i
+<footer class="text-center small">Mary White <a href="https://www.linkedin.com/in/marychindwhite/" target="_blank"><i
         class="fa-brands fa-linkedin"></i></a></footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

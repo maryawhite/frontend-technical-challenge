@@ -6,11 +6,18 @@ body {
     background-color: #05668D;
 }
 
-#loadingbar {
-    width: 2rem;
+.progress {
     height: 2rem;
-    border: 5px solid;
-    margin: auto;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 95%;
+}
+
+.progress-bar {
+    width: 7%;
+    height: 2rem;
+    background-color: #8F2C05;
 }
 
 .card {

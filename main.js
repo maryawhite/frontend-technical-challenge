@@ -37,6 +37,8 @@ $(document).ready(function (){
                                 $("#pokemons").html("No results, search again").addClass("nosearchresults");
                             }
 
+                            mySearchedPokemons = "";  //*** RESET THE SEARCH RESULTS ***
+
                             if(name.includes(userSearch)) {
 
                                 /** THIS SECOND FETCH INSIDE OF THE FOR LOOP GETS THE INFO OUT OF THE URL THAT WAS PROVIDED IN THE FIRST FETCH */
